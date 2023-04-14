@@ -14,12 +14,12 @@ $ docker run -p 5000:5000 flask-app
 ##### Quay
 ```sh
 $ podman login quay.io
-$ push quay.io/brboett/myfirstrepo
+$ push quay.io/<user>/myfirstrepo
 ```
 
 ##### Deploy to OCP
 ```sh
-$ oc new-app quay.io/brboett/myfirstrepo
+$ oc new-app quay.io/<user>/myfirstrepo
 $ oc get svc -o wide
-$ curl 172.30.154.35:5000
+$ curl <ip_address>:5000
 ```
