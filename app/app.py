@@ -5,7 +5,7 @@ app.config['DEBUG'] = True
 
 @app.route("/")
 def hello_world():
-    return "Test Application for OpenShift Dev Spaces - v2.0.0"
+    return "Test Application for OpenShift Dev Spaces - v1.0.0"
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0')
