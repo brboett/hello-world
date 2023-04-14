@@ -6,7 +6,7 @@ $ podman run -p 5000:5000 flask-app
 
 ##### Docker
 ```sh
-$ docker build --tag flask-app .
+$ docker build --tag flask-app:v1.0.0 .
 $ docker run -p 5000:5000 flask-app
 ```
 
