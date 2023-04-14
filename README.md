@@ -14,7 +14,7 @@ $ docker run -p 5000:5000 flask-app
 ##### Quay
 ```sh
 $ podman login quay.io
-$ push quay.io/<user>/myfirstrepo
+$ podman push <img_id> quay.io/<user>/myfirstrepo
 ```
 
 ##### Deploy to OCP
