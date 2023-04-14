@@ -29,7 +29,6 @@ $ curl <ip_address>:5000
 $ oc new-build .
 $ oc get is
 $ oc new-app hello-world:latest
-$ oc expose service/hello-world
-$ oc get service
+$ oc get service -o wide
 $ curl <ip_address>:5000
 ```
