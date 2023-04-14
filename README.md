@@ -26,9 +26,9 @@ $ curl <ip_address>:5000
 
 ##### New Build in OCP
 ```sh
-$ oc new build .
+$ oc new-build .
 $ oc get is
-$ oc new app hello-world:latest
+$ oc new-app hello-world:latest
 $ oc expose service/hello-world
 $ oc get service
 $ curl <ip_address>:5000
