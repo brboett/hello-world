@@ -2,3 +2,9 @@ schemaVersion: 2.1.0
 metadata:
   name: hello-world-ds-demo
   version: 1.0.0
+components:
+  - name: test-container
+    container:
+      image: quay.io/brboett/ocp
+      memoryLimit: 512Mi
+      command: ["python", "app/app.py"]
