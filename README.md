@@ -19,7 +19,7 @@ $ podman push <img_id> quay.io/<user>/myfirstrepo
 
 ##### Deploy to OCP
 ```sh
-$ oc new-app quay.io/<user>/myfirstrepo
+$ oc newclear-app quay.io/<user>/myfirstrepo
 $ oc get svc -o wide
 $ curl <ip_address>:5000
 ```
