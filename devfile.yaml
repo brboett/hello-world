@@ -2,9 +2,24 @@ schemaVersion: 2.1.0
 metadata:
   name: hello-world-ds-demo
   version: 1.0.0
-# components:
-#   - name: test-container
-#     container:
-#       image: quay.io/brboett/ocp
-#       memoryLimit: 512Mi
-#       command: ["python", "app/app.py"]
+components:
+  - alias: maven
+    type: dockerimage
+    image: eclipe/maven-jdk8:latest
+    volumes:
+      - name: mavenrepo
+        containerPath: /root/.m2
+    env:
+      - name: ENV_VAR
+        value: value
+    endpoints:
+      - name: maven-server
+        port: 3101
+        attributes:
+          protocol: http
+          secure: 'true'
+          public: 'true'
+          discoverable: 'false'
+    memoryLimit: 1536M
+    command: ['tail']
+    args: ['-f', '/dev/null']
