@@ -1,11 +1,11 @@
 schemaVersion: 2.1.0
 metadata:
   name: devspaces-demo
-components:
-  - name: tooling-container
-    container:
-      image: quay.io/brboett/test-stack:latest
-      memoryRequest: 256M
-      memoryLimit: 1536M
-      cpuRequest: 100m
-      cpuLimit: 1500m
+# components:
+#   - name: tooling-container
+#     container:
+#       image: quay.io/brboett/test-stack:latest
+#       memoryRequest: 256M
+#       memoryLimit: 1536M
+#       cpuRequest: 100m
+#       cpuLimit: 1500m
